@@ -2,17 +2,18 @@
     margin: 0;
 }
 html,
-body{
+body {
     height: 100%;
 }
-body{
+body {
    font-family: Arial, Helvetica, sans-serif; 
    background-color: #999;
 }
-p{
+
+p {
     margin: 0.5em 0 0.5em 0;
 }
-header{
+header {
    display: block; 
    position: fixed;
    top: 0;
@@ -32,36 +33,67 @@ nav > ul{
     padding: 0;
 }
 
-nav > ul > li{
+nav > ul > li {
 display: inline-block;
 list-style: none;
 margin: 0 5px 0 5px;
 }
-main{
+
+main {
     display: block;
     background-image: url("images/background.png");
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
 }
-footer{
+
+footer {
     padding-bottom: 15px;  
 }
 
-aside,article{
+aside,article {
     padding: 2em;
 }
 
-aside{
+aside {
 text-align: center;
 }
-article{
+article {
     width: 75%;
 }
-.columns{
+.columns {
     display: flex;
 }
 
+.pie {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+.pie img {
+    width: 100%;
+}
+.pie .title {
+    font-weight: bold;
+}
+.pie .columns{
+   width: 100%;
+}
+.pie .price{
+    text-align: right;
+}
+.pie .columns div{
+    width: 50%;
+ }
+ .pie button{
+     background-color: #f6aeae;
+     padding: 10px;
+     border: solid 1px #f6aeae;
+     border-radius: 3px;
+     color: #fff;
+ }
 
 @media only screen and (min-width: 768px){
     main {
