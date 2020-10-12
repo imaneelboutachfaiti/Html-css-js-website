@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css" type="text/css" />
     <title>Bethany's Pie Shop</title>
+    <style>
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            padding: 10px;
+            border: solid 1px #999;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        input[type="reset"] {
+            background-color: transparent;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            border: solid 1px #999;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 
 <body>
@@ -66,6 +97,8 @@
                         <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
                     </div>
                 </div>
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Order" />
             </form>
         </article>
     </main>
